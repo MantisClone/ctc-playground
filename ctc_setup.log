@@ -1,0 +1,115 @@
+(venv) david@david-Inspiron-5502:~/projects/ctc-playground$ ctc setup
+# Setting up ctc...
+
+Running setup process for ctc 0.3.0
+
+Each step is optional
+- by default, setup process will leave existing settings unchanged
+- setup can be rerun multiple times idempotently
+
+Can skip options by pressing enter at each prompt
+old_config has unknown version, using default config
+
+
+## Network Setup
+
+
+Most ctc operations require an RPC provider
+
+Would you like to specify an RPC provider? (default = yes) 
+
+What is the RPC provider URL? https://polygon-mainnet.g.alchemy.com/v2/<ALCHEMY_API_KEY>
+Provider using: chain_id = 137, network = polygon
+What should this node be called? (default = alchemy__137) 
+Would you like to specify additional RPC providers? (default = no) 
+
+Have metadata for the following networks:
+
+      │              name  │       chain_id  
+──────┼────────────────────┼─────────────────
+   1  │           mainnet  │              1  
+   2  │           ropsten  │              3  
+   3  │           rinkeby  │              4  
+   4  │            goerli  │              5  
+   5  │          optimism  │             10  
+   6  │             kovan  │             42  
+   7  │               bnb  │             56  
+   8  │    optimism_kovan  │             69  
+   9  │       bnb_testnet  │             97  
+  10  │            gnosis  │            100  
+  11  │              heco  │            128  
+  12  │           polygon  │            137  
+  13  │            fantom  │            250  
+  14  │   optimism_goerli  │            420  
+  15  │             metis  │          1,088  
+  16  │          moonbeam  │          1,284  
+  17  │         moonriver  │          1,285  
+  18  │    fantom_testnet  │          4,002  
+  19  │            klaytn  │          8,217  
+  20  │          arbitrum  │         42,161  
+  21  │    avalanche_fuji  │         43,113  
+  22  │         avalanche  │         43,114  
+  23  │    polygon_mumbai  │         80,001  
+  24  │  arbitrum_rinkeby  │        421,611  
+  25  │           harmony  │  1,666,600,000  
+  26  │   harmony_testnet  │  1,666,700,000  
+
+Would you like to add metadata for additional networks? (default = no) 
+
+Using 26 networks in config
+
+Which network to use as default?
+    1. arbitrum (chain_id = 42161)
+    2. arbitrum_rinkeby (chain_id = 421611)
+    3. avalanche (chain_id = 43114)
+    4. avalanche_fuji (chain_id = 43113)
+    5. bnb (chain_id = 56)
+    6. bnb_testnet (chain_id = 97)
+    7. fantom (chain_id = 250)
+    8. fantom_testnet (chain_id = 4002)
+    9. gnosis (chain_id = 100)
+    10. goerli (chain_id = 5)
+    11. harmony (chain_id = 1666600000)
+    12. harmony_testnet (chain_id = 1666700000)
+    13. heco (chain_id = 128)
+    14. klaytn (chain_id = 8217)
+    15. kovan (chain_id = 42)
+    16. mainnet (chain_id = 1)
+    17. metis (chain_id = 1088)
+    18. moonbeam (chain_id = 1284)
+    19. moonriver (chain_id = 1285)
+    20. optimism (chain_id = 10)
+    21. optimism_goerli (chain_id = 420)
+    22. optimism_kovan (chain_id = 69)
+    23. polygon (chain_id = 137) (default)
+    24. polygon_mumbai (chain_id = 80001)
+    25. rinkeby (chain_id = 4)
+    26. ropsten (chain_id = 3)
+(default = polygon (chain_id = 137))
+
+(default = polygon (chain_id = 137))
+> 
+
+Network setup complete
+
+
+## Data Root Directory
+
+Where should ctc store data? (specify a directory path) (default = /home/david/ctc_data) /home/david/projects/ctc-playground/         
+creating directory: //home/david/projects/ctc-playground/dbs
+creating directory: //home/david/projects/ctc-playground/logs
+creating directory: //home/david/projects/ctc-playground/evm
+creating directory: //home/david/projects/ctc-playground/logs/rpc
+creating directory: //home/david/projects/ctc-playground/logs/db
+
+Do you want to disable ctc logging? (default = no) 
+
+
+## Database Setup
+
+ctc stores its collected chain data in an sql database
+
+Creating database at path //home/david/projects/ctc-playground/dbs/ctc.db
+
+[WARNING] ctc config file does not exist; use `ctc setup` on command line to generate a config file
+(sqlite3.OperationalError) unable to open database file
